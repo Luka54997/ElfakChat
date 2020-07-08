@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <include android:id="@+id/chat_toolbar"
+        layout="@layout/bar_layout">
+
+    </include>
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/chat_toolbar"
+            android:layout_above="@+id/linear_chat_layout"
+            android:background="#B6B6B6"
+            android:layout_marginBottom="2dp">
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/linear_chat_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_chat_message"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edit_text"
+                android:textSize="15dp"
+                android:hint="Type your message..."
+                android:layout_marginRight="3dp"
+                android:padding="8dp"/>
+
+
+
+            <ImageButton
+                android:id="@+id/btn_chat_record"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/record_button"/>
+
+
+
+            <ImageButton
+                android:id="@+id/btn_chat_send"
+                android:layout_width="34dp"
+                android:layout_height="37dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/send_button1" />
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

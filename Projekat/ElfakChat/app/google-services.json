@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "402081228269",
+    "firebase_url": "https://elfakchat.firebaseio.com",
+    "project_id": "elfakchat",
+    "storage_bucket": "elfakchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402081228269:android:80229b7651a64e7d",
+        "android_client_info": {
+          "package_name": "com.example.elfakchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402081228269-e6lfrt4b8gkhhssh7kag9gbtrolnejc7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.elfakchat",
+            "certificate_hash": "8836fc0a9f592eb4533ad24fdd10b1796adb2e2a"
+          }
+        },
+        {
+          "client_id": "402081228269-i622otcv0mka733uduu9v2moa9fhenle.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRg8AEvXBHrbFVX6pNknVukW421B-zegM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402081228269-i622otcv0mka733uduu9v2moa9fhenle.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

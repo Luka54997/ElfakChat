@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChatActivity">
+
+    <include
+        android:id="@+id/group_layout"
+        layout="@layout/bar_layout"
+        >
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/group_scroll"
+        android:layout_below="@+id/group_layout"
+        android:layout_above="@+id/linear_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/group_text"
+                    android:padding="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="50dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_group_message"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_edit_text"
+            android:textSize="15dp"
+            android:hint="Type your message..."
+            android:layout_marginRight="3dp"
+            android:padding="8dp"/>
+
+
+
+        <ImageButton
+            android:id="@+id/btn_record"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/record_button"/>
+
+
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="34dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/send_button1" />
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
